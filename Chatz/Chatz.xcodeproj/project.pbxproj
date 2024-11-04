@@ -37,6 +37,7 @@
 		B2E498E92CD8DB89004D7110 /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = B2E498E82CD8DB89004D7110 /* FirebaseVertexAI */; };
 		B2E498EB2CD8DBE7004D7110 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E498EA2CD8DBE7004D7110 /* GoogleService-Info.plist */; };
 		B2E498EE2CD8DCAD004D7110 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E498ED2CD8DCAD004D7110 /* SignUpView.swift */; };
+		B2E498F12CD8DE53004D7110 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E498F02CD8DE53004D7110 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		B2E498B22CD8D6FC004D7110 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2E498EA2CD8DBE7004D7110 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B2E498ED2CD8DCAD004D7110 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B2E498F02CD8DE53004D7110 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		B2E498AA2CD8D6FB004D7110 /* Chatz */ = {
 			isa = PBXGroup;
 			children = (
+				B2E498EF2CD8DE48004D7110 /* Extensions */,
 				B2E498EC2CD8DC9D004D7110 /* SignUp */,
 				B2E498AB2CD8D6FB004D7110 /* ChatzApp.swift */,
 				B2E498AD2CD8D6FB004D7110 /* ContentView.swift */,
@@ -127,6 +130,14 @@
 				B2E498ED2CD8DCAD004D7110 /* SignUpView.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		B2E498EF2CD8DE48004D7110 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2E498F02CD8DE53004D7110 /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E498F12CD8DE53004D7110 /* String+Extensions.swift in Sources */,
 				B2E498AE2CD8D6FB004D7110 /* ContentView.swift in Sources */,
 				B2E498EE2CD8DCAD004D7110 /* SignUpView.swift in Sources */,
 				B2E498AC2CD8D6FB004D7110 /* ChatzApp.swift in Sources */,

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBxVOtWA-GC2Yi4dzQ2GmN6B5XBRCGF6ok</string>
+	<key>GCM_SENDER_ID</key>
+	<string>462038240268</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>theMonk7.Chatz</string>
+	<key>PROJECT_ID</key>
+	<string>chatz-3bc1e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chatz-3bc1e.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:462038240268:ios:83d33ed3d5d1d3d9307229</string>
+</dict>
+</plist>

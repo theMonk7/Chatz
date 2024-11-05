@@ -42,6 +42,13 @@
 		B2E498F82CD93A0A004D7110 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E498F72CD93A0A004D7110 /* LoginView.swift */; };
 		B2E498FA2CD93E25004D7110 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E498F92CD93E25004D7110 /* MainView.swift */; };
 		B2E498FE2CD9E0C6004D7110 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E498FD2CD9E0C6004D7110 /* AppState.swift */; };
+		B2E499002CD9EA92004D7110 /* GroupListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E498FF2CD9EA92004D7110 /* GroupListContainerView.swift */; };
+		B2E499022CD9EBC6004D7110 /* AddNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E499012CD9EBC6004D7110 /* AddNewGroupView.swift */; };
+		B2E499052CD9F647004D7110 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E499042CD9F647004D7110 /* Group.swift */; };
+		B2E499072CDA031B004D7110 /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E499062CDA031B004D7110 /* GroupListView.swift */; };
+		B2E499092CDA0645004D7110 /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E499082CDA0645004D7110 /* GroupDetailView.swift */; };
+		B2E4990B2CDA119B004D7110 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4990A2CDA119B004D7110 /* ChatMessage.swift */; };
+		B2E4990D2CDA3E92004D7110 /* ChatMessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4990C2CDA3E92004D7110 /* ChatMessageListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +64,13 @@
 		B2E498F72CD93A0A004D7110 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B2E498F92CD93E25004D7110 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B2E498FD2CD9E0C6004D7110 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B2E498FF2CD9EA92004D7110 /* GroupListContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListContainerView.swift; sourceTree = "<group>"; };
+		B2E499012CD9EBC6004D7110 /* AddNewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGroupView.swift; sourceTree = "<group>"; };
+		B2E499042CD9F647004D7110 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		B2E499062CDA031B004D7110 /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
+		B2E499082CDA0645004D7110 /* GroupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailView.swift; sourceTree = "<group>"; };
+		B2E4990A2CDA119B004D7110 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		B2E4990C2CDA3E92004D7110 /* ChatMessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +127,7 @@
 		B2E498AA2CD8D6FB004D7110 /* Chatz */ = {
 			isa = PBXGroup;
 			children = (
+				B2E499032CD9F639004D7110 /* Models */,
 				B2E498FC2CD9E0B9004D7110 /* Enums */,
 				B2E498F52CD939F4004D7110 /* Views */,
 				B2E498EF2CD8DE48004D7110 /* Extensions */,
@@ -133,15 +148,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B2E498EC2CD8DC9D004D7110 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				B2E498F32CD8E494004D7110 /* Model.swift */,
-				B2E498ED2CD8DCAD004D7110 /* SignUpView.swift */,
-			);
-			path = SignUp;
-			sourceTree = "<group>";
-		};
 		B2E498EF2CD8DE48004D7110 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,27 +159,16 @@
 		B2E498F52CD939F4004D7110 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B2E498FB2CD93E34004D7110 /* MainView */,
-				B2E498F62CD939FF004D7110 /* Login */,
-				B2E498EC2CD8DC9D004D7110 /* SignUp */,
+				B2E498F92CD93E25004D7110 /* MainView.swift */,
+				B2E498F72CD93A0A004D7110 /* LoginView.swift */,
+				B2E498ED2CD8DCAD004D7110 /* SignUpView.swift */,
+				B2E498FF2CD9EA92004D7110 /* GroupListContainerView.swift */,
+				B2E499012CD9EBC6004D7110 /* AddNewGroupView.swift */,
+				B2E499062CDA031B004D7110 /* GroupListView.swift */,
+				B2E499082CDA0645004D7110 /* GroupDetailView.swift */,
+				B2E4990C2CDA3E92004D7110 /* ChatMessageListView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		B2E498F62CD939FF004D7110 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				B2E498F72CD93A0A004D7110 /* LoginView.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		B2E498FB2CD93E34004D7110 /* MainView */ = {
-			isa = PBXGroup;
-			children = (
-				B2E498F92CD93E25004D7110 /* MainView.swift */,
-			);
-			path = MainView;
 			sourceTree = "<group>";
 		};
 		B2E498FC2CD9E0B9004D7110 /* Enums */ = {
@@ -182,6 +177,16 @@
 				B2E498FD2CD9E0C6004D7110 /* AppState.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		B2E499032CD9F639004D7110 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2E498F32CD8E494004D7110 /* Model.swift */,
+				B2E499042CD9F647004D7110 /* Group.swift */,
+				B2E4990A2CDA119B004D7110 /* ChatMessage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,13 +289,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E499052CD9F647004D7110 /* Group.swift in Sources */,
+				B2E4990D2CDA3E92004D7110 /* ChatMessageListView.swift in Sources */,
 				B2E498F82CD93A0A004D7110 /* LoginView.swift in Sources */,
+				B2E499022CD9EBC6004D7110 /* AddNewGroupView.swift in Sources */,
 				B2E498FA2CD93E25004D7110 /* MainView.swift in Sources */,
 				B2E498F42CD8E494004D7110 /* Model.swift in Sources */,
 				B2E498FE2CD9E0C6004D7110 /* AppState.swift in Sources */,
 				B2E498F12CD8DE53004D7110 /* String+Extensions.swift in Sources */,
+				B2E4990B2CDA119B004D7110 /* ChatMessage.swift in Sources */,
 				B2E498AE2CD8D6FB004D7110 /* ContentView.swift in Sources */,
+				B2E499002CD9EA92004D7110 /* GroupListContainerView.swift in Sources */,
 				B2E498EE2CD8DCAD004D7110 /* SignUpView.swift in Sources */,
+				B2E499072CDA031B004D7110 /* GroupListView.swift in Sources */,
+				B2E499092CDA0645004D7110 /* GroupDetailView.swift in Sources */,
 				B2E498AC2CD8D6FB004D7110 /* ChatzApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

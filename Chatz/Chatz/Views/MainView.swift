@@ -21,17 +21,21 @@ struct MainView: View {
     }
     
     var body: some View {
-        VStack {
-            Text("Main View")
-            Button {
-                Task {
-                    signOut()
+        
+        TabView {
+            GroupListContainerView()
+                .tabItem {
+                    Label("Chats", systemImage: "message.fill")
                 }
-            } label: {
-                Text("Logout")
-            }
+            GroupListContainerView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
+            GroupListContainerView()
+                .tabItem {
+                    Label("Profile", systemImage: "image")
+                }
         }
-        .navigationTitle("HOME")
 
     }
 }

@@ -13,6 +13,9 @@ struct SignUpView: View {
     @State private var email: String = ""
     @State private var password: String  = ""
     @State private var displayName: String = ""
+    @State private var errorMessage: String = ""
+    @EnvironmentObject private var model: Model
+    @EnvironmentObject private var appState: AppState
     
     private var isFormValid: Bool {
         !email.isEmptyOrWhiteSpace && !password.isEmptyOrWhiteSpace && !displayName.isEmptyOrWhiteSpace
@@ -20,9 +23,12 @@ struct SignUpView: View {
     
     private func signUp() async {
         do {
-            try await Auth.auth().createUser(withEmail: email, password: password)
+            let result = try await Auth.auth().createUser(withEmail: email, password: password)
+            try await model.updateDisplayName(for: result.user, displayName: displayName)
+            errorMessage = ""
         } catch let error {
             print(error.localizedDescription)
+            errorMessage = error.localizedDescription
         }
     }
     
@@ -42,7 +48,7 @@ struct SignUpView: View {
                         await signUp()
                     }
                 }, label: {
-                    Text("Sign Up")
+                    Text("SignUp")
                 })
                 .disabled(!isFormValid)
                 .buttonStyle(.borderless)
@@ -50,16 +56,22 @@ struct SignUpView: View {
                 Spacer()
                 
                 Button(action: {
-                    
+                    appState.routes.append(.login)
                 }, label: {
                     Text("Login")
                 })
                 .buttonStyle(.borderless)
             }
+            
+            Text(errorMessage)
+                .foregroundStyle(.red)
         }
+        .navigationTitle("SignUp")
     }
 }
 
 #Preview {
     SignUpView()
+        .environmentObject(Model())
+        .environmentObject(AppState())
 }

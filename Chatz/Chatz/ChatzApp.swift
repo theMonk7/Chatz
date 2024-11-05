@@ -7,7 +7,7 @@
 
 import SwiftUI
 import FirebaseCore
-
+import FirebaseAuth
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -20,9 +20,34 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct ChatzApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject private var appState = AppState()
+    @StateObject private var model = Model()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack(path: $appState.routes) {
+                ZStack {
+                    if Auth.auth().currentUser != nil {
+                        MainView()
+                    } else {
+                        LoginView()
+                    }
+                }
+                .navigationDestination(for: Route.self) { route in
+                    switch route {
+                    case .login:
+                        LoginView()
+                    case .main:
+                        MainView()
+                    case .signUp:
+                        SignUpView()
+                    }
+                }
+            }
+            .environmentObject(appState)
+            .environmentObject(model)
+            
+            
         }
     }
 }

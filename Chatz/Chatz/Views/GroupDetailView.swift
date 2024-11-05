@@ -22,7 +22,15 @@ struct GroupDetailView: View {
     
     var body: some View {
         VStack {
-            ChatMessageListView(messages: model.chatMessages)
+            ScrollViewReader { proxy in
+                ChatMessageListView(messages: model.chatMessages)
+                    .onChange(of: model.chatMessages) { oldValue, newValue in
+                        let lastMessage = model.chatMessages[model.chatMessages.endIndex - 1]
+                        withAnimation {
+                            proxy.scrollTo(lastMessage.id, anchor: .bottom)
+                        }
+                    }
+            }
             Spacer()
             HStack {
                 TextField("Enter message", text: $chatMessage)
@@ -31,6 +39,7 @@ struct GroupDetailView: View {
                     Task {
                         do {
                             try await sendMessage()
+                            chatMessage = ""
                         } catch let error {
                             print(error.localizedDescription)
                         }

@@ -49,6 +49,7 @@
 		B2E499092CDA0645004D7110 /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E499082CDA0645004D7110 /* GroupDetailView.swift */; };
 		B2E4990B2CDA119B004D7110 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4990A2CDA119B004D7110 /* ChatMessage.swift */; };
 		B2E4990D2CDA3E92004D7110 /* ChatMessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4990C2CDA3E92004D7110 /* ChatMessageListView.swift */; };
+		B2E4990F2CDA429D004D7110 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4990E2CDA429D004D7110 /* ChatMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		B2E499082CDA0645004D7110 /* GroupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailView.swift; sourceTree = "<group>"; };
 		B2E4990A2CDA119B004D7110 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		B2E4990C2CDA3E92004D7110 /* ChatMessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageListView.swift; sourceTree = "<group>"; };
+		B2E4990E2CDA429D004D7110 /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				B2E499062CDA031B004D7110 /* GroupListView.swift */,
 				B2E499082CDA0645004D7110 /* GroupDetailView.swift */,
 				B2E4990C2CDA3E92004D7110 /* ChatMessageListView.swift */,
+				B2E4990E2CDA429D004D7110 /* ChatMessageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E4990F2CDA429D004D7110 /* ChatMessageView.swift in Sources */,
 				B2E499052CD9F647004D7110 /* Group.swift in Sources */,
 				B2E4990D2CDA3E92004D7110 /* ChatMessageListView.swift in Sources */,
 				B2E498F82CD93A0A004D7110 /* LoginView.swift in Sources */,

@@ -10,6 +10,9 @@
 		B21F6C872CDA57AA0048BFE6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F6C862CDA57AA0048BFE6 /* SettingsView.swift */; };
 		B21F6C8D2CDB904F0048BFE6 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F6C8C2CDB904F0048BFE6 /* LoaderView.swift */; };
 		B21F6C902CDB940D0048BFE6 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F6C8F2CDB940D0048BFE6 /* ErrorWrapper.swift */; };
+		B21F6C9A2CDB9E1F0048BFE6 /* ChatzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F6C992CDB9E1F0048BFE6 /* ChatzTests.swift */; };
+		B21F6CA72CDB9E280048BFE6 /* ChatzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F6CA62CDB9E280048BFE6 /* ChatzUITests.swift */; };
+		B21F6CA92CDB9E280048BFE6 /* ChatzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F6CA82CDB9E280048BFE6 /* ChatzUITestsLaunchTests.swift */; };
 		B2E498AC2CD8D6FB004D7110 /* ChatzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E498AB2CD8D6FB004D7110 /* ChatzApp.swift */; };
 		B2E498AE2CD8D6FB004D7110 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E498AD2CD8D6FB004D7110 /* ContentView.swift */; };
 		B2E498B02CD8D6FC004D7110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E498AF2CD8D6FC004D7110 /* Assets.xcassets */; };
@@ -55,10 +58,32 @@
 		B2E4990F2CDA429D004D7110 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4990E2CDA429D004D7110 /* ChatMessageView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B21F6C9B2CDB9E1F0048BFE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2E498A02CD8D6FB004D7110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2E498A72CD8D6FB004D7110;
+			remoteInfo = Chatz;
+		};
+		B21F6CAA2CDB9E280048BFE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2E498A02CD8D6FB004D7110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2E498A72CD8D6FB004D7110;
+			remoteInfo = Chatz;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B21F6C862CDA57AA0048BFE6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B21F6C8C2CDB904F0048BFE6 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		B21F6C8F2CDB940D0048BFE6 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		B21F6C972CDB9E1F0048BFE6 /* ChatzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21F6C992CDB9E1F0048BFE6 /* ChatzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatzTests.swift; sourceTree = "<group>"; };
+		B21F6CA42CDB9E280048BFE6 /* ChatzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21F6CA62CDB9E280048BFE6 /* ChatzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatzUITests.swift; sourceTree = "<group>"; };
+		B21F6CA82CDB9E280048BFE6 /* ChatzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatzUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B2E498A82CD8D6FB004D7110 /* Chatz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E498AB2CD8D6FB004D7110 /* ChatzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatzApp.swift; sourceTree = "<group>"; };
 		B2E498AD2CD8D6FB004D7110 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +107,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B21F6C942CDB9E1F0048BFE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21F6CA12CDB9E280048BFE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2E498A52CD8D6FB004D7110 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,10 +209,29 @@
 			path = ErrorView;
 			sourceTree = "<group>";
 		};
+		B21F6C982CDB9E1F0048BFE6 /* ChatzTests */ = {
+			isa = PBXGroup;
+			children = (
+				B21F6C992CDB9E1F0048BFE6 /* ChatzTests.swift */,
+			);
+			path = ChatzTests;
+			sourceTree = "<group>";
+		};
+		B21F6CA52CDB9E280048BFE6 /* ChatzUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B21F6CA62CDB9E280048BFE6 /* ChatzUITests.swift */,
+				B21F6CA82CDB9E280048BFE6 /* ChatzUITestsLaunchTests.swift */,
+			);
+			path = ChatzUITests;
+			sourceTree = "<group>";
+		};
 		B2E4989F2CD8D6FB004D7110 = {
 			isa = PBXGroup;
 			children = (
 				B2E498AA2CD8D6FB004D7110 /* Chatz */,
+				B21F6C982CDB9E1F0048BFE6 /* ChatzTests */,
+				B21F6CA52CDB9E280048BFE6 /* ChatzUITests */,
 				B2E498A92CD8D6FB004D7110 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				B2E498A82CD8D6FB004D7110 /* Chatz.app */,
+				B21F6C972CDB9E1F0048BFE6 /* ChatzTests.xctest */,
+				B21F6CA42CDB9E280048BFE6 /* ChatzUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,6 +312,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B21F6C962CDB9E1F0048BFE6 /* ChatzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B21F6C9D2CDB9E1F0048BFE6 /* Build configuration list for PBXNativeTarget "ChatzTests" */;
+			buildPhases = (
+				B21F6C932CDB9E1F0048BFE6 /* Sources */,
+				B21F6C942CDB9E1F0048BFE6 /* Frameworks */,
+				B21F6C952CDB9E1F0048BFE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B21F6C9C2CDB9E1F0048BFE6 /* PBXTargetDependency */,
+			);
+			name = ChatzTests;
+			productName = ChatzTests;
+			productReference = B21F6C972CDB9E1F0048BFE6 /* ChatzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B21F6CA32CDB9E280048BFE6 /* ChatzUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B21F6CAC2CDB9E280048BFE6 /* Build configuration list for PBXNativeTarget "ChatzUITests" */;
+			buildPhases = (
+				B21F6CA02CDB9E280048BFE6 /* Sources */,
+				B21F6CA12CDB9E280048BFE6 /* Frameworks */,
+				B21F6CA22CDB9E280048BFE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B21F6CAB2CDB9E280048BFE6 /* PBXTargetDependency */,
+			);
+			name = ChatzUITests;
+			productName = ChatzUITests;
+			productReference = B21F6CA42CDB9E280048BFE6 /* ChatzUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B2E498A72CD8D6FB004D7110 /* Chatz */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2E498B62CD8D6FC004D7110 /* Build configuration list for PBXNativeTarget "Chatz" */;
@@ -305,6 +401,14 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					B21F6C962CDB9E1F0048BFE6 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = B2E498A72CD8D6FB004D7110;
+					};
+					B21F6CA32CDB9E280048BFE6 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = B2E498A72CD8D6FB004D7110;
+					};
 					B2E498A72CD8D6FB004D7110 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -327,11 +431,27 @@
 			projectRoot = "";
 			targets = (
 				B2E498A72CD8D6FB004D7110 /* Chatz */,
+				B21F6C962CDB9E1F0048BFE6 /* ChatzTests */,
+				B21F6CA32CDB9E280048BFE6 /* ChatzUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B21F6C952CDB9E1F0048BFE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21F6CA22CDB9E280048BFE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2E498A62CD8D6FB004D7110 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,6 +465,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B21F6C932CDB9E1F0048BFE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21F6C9A2CDB9E1F0048BFE6 /* ChatzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21F6CA02CDB9E280048BFE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21F6CA72CDB9E280048BFE6 /* ChatzUITests.swift in Sources */,
+				B21F6CA92CDB9E280048BFE6 /* ChatzUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2E498A42CD8D6FB004D7110 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,7 +510,90 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B21F6C9C2CDB9E1F0048BFE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2E498A72CD8D6FB004D7110 /* Chatz */;
+			targetProxy = B21F6C9B2CDB9E1F0048BFE6 /* PBXContainerItemProxy */;
+		};
+		B21F6CAB2CDB9E280048BFE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2E498A72CD8D6FB004D7110 /* Chatz */;
+			targetProxy = B21F6CAA2CDB9E280048BFE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B21F6C9E2CDB9E1F0048BFE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B63BRQJKH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = theMonk7.ChatzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chatz";
+			};
+			name = Debug;
+		};
+		B21F6C9F2CDB9E1F0048BFE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B63BRQJKH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = theMonk7.ChatzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chatz";
+			};
+			name = Release;
+		};
+		B21F6CAD2CDB9E280048BFE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B63BRQJKH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = theMonk7.ChatzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chatz;
+			};
+			name = Debug;
+		};
+		B21F6CAE2CDB9E280048BFE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B63BRQJKH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = theMonk7.ChatzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chatz;
+			};
+			name = Release;
+		};
 		B2E498B42CD8D6FC004D7110 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -554,6 +774,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B21F6C9D2CDB9E1F0048BFE6 /* Build configuration list for PBXNativeTarget "ChatzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21F6C9E2CDB9E1F0048BFE6 /* Debug */,
+				B21F6C9F2CDB9E1F0048BFE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B21F6CAC2CDB9E280048BFE6 /* Build configuration list for PBXNativeTarget "ChatzUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21F6CAD2CDB9E280048BFE6 /* Debug */,
+				B21F6CAE2CDB9E280048BFE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B2E498A32CD8D6FB004D7110 /* Build configuration list for PBXProject "Chatz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

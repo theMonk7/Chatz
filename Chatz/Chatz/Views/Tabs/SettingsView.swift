@@ -21,6 +21,7 @@ struct SettingsView: View {
     @State private var settingsConfig = SettingsConfig()
     @FocusState private var isEditing: Bool
     @State private var photoItem: PhotosPickerItem?
+    @EnvironmentObject private var appState: AppState
     
     private var displayName: String {
         guard let currentUser = Auth.auth().currentUser else { return "Guest" }
@@ -63,6 +64,7 @@ struct SettingsView: View {
                 Task {
                     do {
                         try Auth.auth().signOut()
+                        appState.routes.removeAll()
                     } catch let error {
                         print(error.localizedDescription)
                     }
@@ -82,4 +84,5 @@ struct SettingsView: View {
 
 #Preview {
     SettingsView()
+        .environmentObject(AppState())
 }

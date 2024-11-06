@@ -20,11 +20,13 @@ struct LoginView: View {
     
     private func login() async {
         do {
-            let result = try await Auth.auth().signIn(withEmail: email, password: password)
+            _ = try await Auth.auth().signIn(withEmail: email, password: password)
+            appState.routes.append(.main)
+            
             
         // TODO: -
         // if authenticated, go to the main screen
-            appState.routes.append(.main)
+            
         } catch let error {
             print(error.localizedDescription)
         }

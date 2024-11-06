@@ -10,15 +10,7 @@ import FirebaseAuth
 
 struct MainView: View {
     @EnvironmentObject private var appState: AppState
-    
-    private func signOut() {
-        do {
-            try Auth.auth().signOut()
-            appState.routes.removeAll()
-        } catch let error {
-            print(error.localizedDescription)
-        }
-    }
+
     
     var body: some View {
         

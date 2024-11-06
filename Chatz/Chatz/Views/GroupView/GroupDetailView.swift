@@ -25,7 +25,7 @@ struct GroupDetailView: View {
             ScrollViewReader { proxy in
                 ChatMessageListView(messages: model.chatMessages)
                     .onChange(of: model.chatMessages) { oldValue, newValue in
-                        let lastMessage = model.chatMessages[model.chatMessages.endIndex - 1]
+                        guard let lastMessage = model.chatMessages.last else { return }
                         withAnimation {
                             proxy.scrollTo(lastMessage.id, anchor: .bottom)
                         }

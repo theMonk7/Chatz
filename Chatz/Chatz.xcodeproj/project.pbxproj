@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21F6C872CDA57AA0048BFE6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F6C862CDA57AA0048BFE6 /* SettingsView.swift */; };
 		B2E498AC2CD8D6FB004D7110 /* ChatzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E498AB2CD8D6FB004D7110 /* ChatzApp.swift */; };
 		B2E498AE2CD8D6FB004D7110 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E498AD2CD8D6FB004D7110 /* ContentView.swift */; };
 		B2E498B02CD8D6FC004D7110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E498AF2CD8D6FC004D7110 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B21F6C862CDA57AA0048BFE6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B2E498A82CD8D6FB004D7110 /* Chatz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E498AB2CD8D6FB004D7110 /* ChatzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatzApp.swift; sourceTree = "<group>"; };
 		B2E498AD2CD8D6FB004D7110 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B21F6C852CDA579A0048BFE6 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				B2E498F92CD93E25004D7110 /* MainView.swift */,
+				B2E498FF2CD9EA92004D7110 /* GroupListContainerView.swift */,
+				B21F6C862CDA57AA0048BFE6 /* SettingsView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		B2E4989F2CD8D6FB004D7110 = {
 			isa = PBXGroup;
 			children = (
@@ -161,10 +173,9 @@
 		B2E498F52CD939F4004D7110 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B2E498F92CD93E25004D7110 /* MainView.swift */,
+				B21F6C852CDA579A0048BFE6 /* Tabs */,
 				B2E498F72CD93A0A004D7110 /* LoginView.swift */,
 				B2E498ED2CD8DCAD004D7110 /* SignUpView.swift */,
-				B2E498FF2CD9EA92004D7110 /* GroupListContainerView.swift */,
 				B2E499012CD9EBC6004D7110 /* AddNewGroupView.swift */,
 				B2E499062CDA031B004D7110 /* GroupListView.swift */,
 				B2E499082CDA0645004D7110 /* GroupDetailView.swift */,
@@ -297,6 +308,7 @@
 				B2E4990D2CDA3E92004D7110 /* ChatMessageListView.swift in Sources */,
 				B2E498F82CD93A0A004D7110 /* LoginView.swift in Sources */,
 				B2E499022CD9EBC6004D7110 /* AddNewGroupView.swift in Sources */,
+				B21F6C872CDA57AA0048BFE6 /* SettingsView.swift in Sources */,
 				B2E498FA2CD93E25004D7110 /* MainView.swift in Sources */,
 				B2E498F42CD8E494004D7110 /* Model.swift in Sources */,
 				B2E498FE2CD9E0C6004D7110 /* AppState.swift in Sources */,

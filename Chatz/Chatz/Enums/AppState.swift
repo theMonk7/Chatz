@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum Route {
     case main
@@ -15,4 +16,20 @@ enum Route {
 
 class AppState: ObservableObject {
     @Published  var routes: [Route] = []
+}
+
+
+extension UIImagePickerController.SourceType: Identifiable {
+    public var id: Int {
+        switch self {
+        case .camera:
+            return 1
+        case .photoLibrary:
+            return 2
+        default:
+            return 3
+        }
+    }
+    
+    
 }

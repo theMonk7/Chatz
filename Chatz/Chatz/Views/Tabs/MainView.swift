@@ -27,13 +27,9 @@ struct MainView: View {
                 .tabItem {
                     Label("Chats", systemImage: "message.fill")
                 }
-            GroupListContainerView()
+            SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
-                }
-            GroupListContainerView()
-                .tabItem {
-                    Label("Profile", systemImage: "image")
                 }
         }
 

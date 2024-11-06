@@ -12,7 +12,7 @@ struct GroupDetailView: View {
     let group: Group
     @State private var chatMessage = ""
     @EnvironmentObject private var model: Model
-    
+    @EnvironmentObject private var appState: AppState
     
     private func sendMessage() async throws {
         guard let currentUser = Auth.auth().currentUser else { return }
@@ -38,11 +38,13 @@ struct GroupDetailView: View {
                 Button(action: {
                     Task {
                         do {
+                            appState.loadingState = .loading("Messages Loading")
                             try await sendMessage()
                             chatMessage = ""
                         } catch let error {
                             print(error.localizedDescription)
                         }
+                        appState.loadingState = .idle
                     }
                 }, label: {
                     Image(systemName: "paperplane.fill")
@@ -63,4 +65,5 @@ struct GroupDetailView: View {
 #Preview {
     GroupDetailView(group: Group(subject: "Groceries"))
         .environmentObject(Model())
+        .environmentObject(AppState())
 }

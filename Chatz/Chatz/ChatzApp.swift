@@ -44,6 +44,15 @@ struct ChatzApp: App {
                     }
                 }
             }
+            .overlay(alignment: .top, content: {
+                switch appState.loadingState {
+                case .idle:
+                    EmptyView()
+                case .loading(let message):
+                    LoaderView(message: message)
+                    
+                }
+            })
             .environmentObject(appState)
             .environmentObject(model)
             

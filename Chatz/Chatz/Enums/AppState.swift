@@ -13,9 +13,18 @@ enum Route {
     case login
     case signUp
 }
+enum LoadingState: Hashable, Identifiable {
+    case idle
+    case loading(String)
+    var id: Self {
+        return self
+    }
+}
 
 class AppState: ObservableObject {
-    @Published  var routes: [Route] = []
+    @Published var routes: [Route] = []
+    @Published var loadingState: LoadingState = .idle
+    @Published var errorWrapper: ErrorWrapper? 
 }
 
 
